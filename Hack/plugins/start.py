@@ -25,7 +25,7 @@ async def start(event):
     if DB:
         await DB.add_user(id)
     if env.LOG_GROUP_ID:
-        await bot.send_message(env.LOG_GROUP_ID, f'{mention} Has Just Started The Bot')
+        await bot.send_message(env.LOG_GROUP_ID, f'{mention} Has Just Started The Bot\nOp @AM_YTBOTT')
 
 @bot.on(events.NewMessage(pattern="/hack"))
 async def hack(event):
