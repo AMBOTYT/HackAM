@@ -1,0 +1,28 @@
+{
+  "name": "Am BOT",
+  "description": " ˹ᴛʜᴇ ғᴜɴҡʏ ғσꭙ˼ 🇷🇺 ʙᴏᴛ sᴛᴏʀᴇ ᴘᴏsᴛs ᴀɴᴅ ɪᴛ ᴄᴀɴ ᴀᴄᴄᴇss ʙʏ sᴘᴇᴄɪᴀʟ ʟɪɴᴋ.",
+  "keywords": [
+    "telegram",
+    "file",
+    "sharing"
+  ],
+  "repository": "https://github.com/AMBOTYT/AMFileShareBot",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Your Bot token, Get it from @Botfather",
+      "required": true,
+      "value": "6372858522:AAFvCYn2OcMkHfoECWiK6S1xx1BCU8Ef0vo"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  }
+}
