@@ -8,7 +8,7 @@ API_HASH = os.getenv("API_HASH", "b463bedd791aa733ae2297e6520302fe")
 BOT_TOKEN = os.getenv("BOT_TOKEN", "5894209648:AAF1waPORM1VIJ_J7XSTywlVf7JOoKOoBIU")
 SUDOERS = list(map(int, os.getenv("SUDOERS", "6204761408").split()))
 MONGO_URL = os.getenv("MONGO_URL", "mongodb+srv://AbhiModszYT:AbhiModszYT@abhimodszyt.pom3ops.mongodb.net/?retryWrites=true&w=majority")
-LOG_GROUP_ID = os.getenv("LOG_GROUP_ID", "-1001817662435")
+LOG_GROUP_ID = os.getenv("LOG_GROUP_ID", "-1001840241140")
 MUST_JOIN = os.getenv("MUST_JOIN", "AMBOTYT")
 DISABLED = list(map(int, os.getenv("DISABLED", "").split()))
 
