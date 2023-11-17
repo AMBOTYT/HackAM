@@ -13,7 +13,9 @@ async def start(event):
     updates_url = "https://t.me/AMBOTYT"
     support_url = "https://t.me/AM_YTSUPPORT"
     owner_url = "https://t.me/AM_YTBOTT"
-    chat_url ="https://t.me/+jCS-YsVBVEE3NjQ1"
+    chat_url = "https://t.me/+jCS-YsVBVEE3NjQ1"
+    help_button = Button.inline("ʜᴇʟᴘ", data="help_callback")
+
     buttons = [
         [
             Button.url("ᴜᴘᴅᴀᴛᴇꜱ ⚡️", url=updates_url),
@@ -21,8 +23,9 @@ async def start(event):
         ],
         [
             Button.url("ᴄʜᴀᴛ ɢʀᴏᴜᴘ 💌", url=chat_url),
-             Button.url("💕 ᴏᴡɴᴇʀ", url=owner_url)
+            Button.url("💕 ᴏᴡɴᴇʀ", url=owner_url)
         ],
+        [help_button],
     ]
 
     # Send the message with buttons
@@ -32,6 +35,12 @@ async def start(event):
         await DB.add_user(id)
     if env.LOG_GROUP_ID:
         await bot.send_message(env.LOG_GROUP_ID, f'{mention} Has Just Started The Bot\nOp @AM_YTBOTT')
+
+# Define the callback function for the "Help" button
+@bot.on(events.CallbackQuery(data="help_callback"))
+async def help_callback_handler(event):
+    # Trigger the /help command
+    await hack(event)
 
 @bot.on(events.NewMessage(pattern="/hack"))
 async def hack(event):
