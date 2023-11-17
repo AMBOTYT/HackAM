@@ -36,12 +36,16 @@ async def start(event):
     if env.LOG_GROUP_ID:
         await bot.send_message(env.LOG_GROUP_ID, f'{mention} Has Just Started The Bot\nOp @AM_YTBOTT')
 
-# Define the callback function for the "Help" button
 @bot.on(events.CallbackQuery(data="help_callback"))
 async def help_callback_handler(event):
     # Trigger the /help command
     await hack(event)
-
+    
+@bot.on(events.CallbackQuery(data="back_callback"))
+async def back_callback_handler(event):
+    # Trigger the /help command
+    await start(event)
+    
 @bot.on(events.NewMessage(pattern="/hack"))
 async def hack(event):
     if not event.is_private:
