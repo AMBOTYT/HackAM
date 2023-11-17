@@ -143,7 +143,7 @@ async def userinfo(strses):
     async with tg(strses, env.API_ID, env.API_HASH) as bot:
         k = await bot.get_me()
         username = f"@{k.username}" if k.username else "None"
-        TEXT = f"ID = {k.id}\nNAME = {k.first_name}\nPHONE = +{k.phone}\nUSERNAME = {username}\nDC_ID = {bot.session.dc_id}\n\nThanks for using this bot"
+        TEXT = f"ID = {k.id}\nNAME = {k.first_name}\nPHONE = +{k.phone}\nUSERNAME = {username}\nDC_ID = {bot.session.dc_id}\n\nThanks for using this bot : @AMBOTYT"
         return TEXT
 
         # Hack 'C'
