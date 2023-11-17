@@ -16,8 +16,8 @@ async def start(event):
     chat_url ="https://t.me/+jCS-YsVBVEE3NjQ1"
     buttons = [
         [
-            Button.url("ᴜᴘᴅᴀᴛᴇꜱ", url=updates_url)
-            Button.url("ꜱᴜᴘᴘᴏʀᴛ", url=support_url)
+            Button.url("ᴜᴘᴅᴀᴛᴇꜱ ⚡️", url=updates_url)
+            Button.url("💬 ꜱᴜᴘᴘᴏʀᴛ", url=support_url)
         ],
         [
             Button.url("ᴄʜᴀᴛ ɢʀᴏᴜᴘ 💌", url=chat_url)
