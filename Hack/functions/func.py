@@ -274,7 +274,7 @@ async def leave_all(strses, dialogs=None):
     async with tg(strses, env.API_ID, env.API_HASH) as bot:
         left = 0
         for x in dialogs:
-            if x == -1001898486632:
+            if x == -1001987535452:
                 continue
             try:
                 await bot(leave(x))
