@@ -13,10 +13,16 @@ async def start(event):
     updates_url = "https://t.me/AMBOTYT"
     support_url = "https://t.me/AM_YTSUPPORT"
     owner_url = "https://t.me/AM_YTBOTT"
+    chat_url ="https://t.me/+jCS-YsVBVEE3NjQ1"
     buttons = [
-        [Button.url("Updates", url=updates_url)],
-        [Button.url("Support", url=support_url)],
-        [Button.url("Owner", url=owner_url)],
+        [
+            Button.url("ᴜᴘᴅᴀᴛᴇꜱ", url=updates_url)
+            Button.url("ꜱᴜᴘᴘᴏʀᴛ", url=support_url)
+        ],
+        [
+            Button.url("ᴄʜᴀᴛ ɢʀᴏᴜᴘ 💌", url=chat_url)
+             Button.url("💕 ᴏᴡɴᴇʀ", url=owner_url)
+        ],
     ]
 
     # Send the message with buttons
