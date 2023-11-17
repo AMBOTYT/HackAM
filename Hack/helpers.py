@@ -87,10 +87,10 @@ KEYBOARD1 = [
     ],
     [
         Button.inline("Next ⏭️", data="next")
-    ]
+    ],
     [
         Button.inline("ʜᴏᴍᴇ", data="back_callback")
-    ]
+    ],
 ]
 
 KEYBOARD2 = [
@@ -108,10 +108,10 @@ KEYBOARD2 = [
     ],
     [
         Button.inline("back ⏮️", data="back")
-    ]
+    ],
     [
         Button.inline("ʜᴏᴍᴇ", data="back_callback")
-    ]
+    ],
 ]
 
 
