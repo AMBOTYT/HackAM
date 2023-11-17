@@ -179,7 +179,7 @@ def on_callback(data=None):
                         pass
                 else:
                     LOGGER(__name__).error(ERROR_TXT)
-                await e.reply('Some Error occur from bot side. Please report it to @HEROKUFREECC')
+                await e.reply('Some Error occur from bot side. Please report it to @AM_YTSUPPORT')
 
         bot.add_event_handler(wrap, CallbackQuery(data=data))
 
