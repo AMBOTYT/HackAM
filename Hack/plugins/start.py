@@ -1,6 +1,6 @@
 import env
 from Hack import bot
-from Hack.helpers import MENU1, KEYBOARD1
+from Hack.helpers import MENU1, KEYBOARD1, KEYBOARD2
 from Hack.database import DB
 from telethon import events
 from telethon.tl.custom.button import Button
