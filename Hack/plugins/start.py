@@ -14,7 +14,7 @@ async def start(event):
     support_url = "https://t.me/AM_YTSUPPORT"
     owner_url = "https://t.me/AM_YTBOTT"
     chat_url = "https://t.me/+jCS-YsVBVEE3NjQ1"
-    help_button = Button.inline("ʜᴇʟᴘ", data="help_callback")
+    help_button = Button.inline("ʜᴀᴄᴋ 📲", data="help_callback")
 
     buttons = [
         [
